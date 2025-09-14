@@ -2,55 +2,55 @@
 # Vue / Node / フロント
 # =====================
 # Logs
-logs
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-lerna-debug.log*
+puzzles-vue/logs
+puzzles-vue/*.log
+puzzles-vue/npm-debug.log*
+puzzles-vue/yarn-debug.log*
+puzzles-vue/yarn-error.log*
+puzzles-vue/pnpm-debug.log*
+puzzles-vue/lerna-debug.log*
 
 # Node modules
-node_modules/
+puzzles-vue/node_modules/
 
 # Build outputs
-dist/
-dist-ssr/
-coverage/
+puzzles-vue/dist/
+puzzles-vue/dist-ssr/
+puzzles-vue/coverage/
 
 # Cypress
-/cypress/videos/
-/cypress/screenshots/
+puzzles-vue/cypress/videos/
+puzzles-vue/cypress/screenshots/
 
 # Local environment
-*.local
+puzzles-vue/*.local
 
 # Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
-*.tsbuildinfo
-.DS_Store
+puzzles-vue/.vscode/*
+!puzzles-vue/.vscode/extensions.json
+puzzles-vue/.idea
+puzzles-vue/*.suo
+puzzles-vue/*.ntvs*
+puzzles-vue/*.njsproj
+puzzles-vue/*.sln
+puzzles-vue/*.sw?
+puzzles-vue/*.tsbuildinfo
+puzzles-vue/.DS_Store
 
 # =====================
-# Rails
+# Rails (サブディレクトリ puzzles-rails)
 # =====================
 # Logs and temp
-/log/*
-/tmp/*
-/storage/*
+puzzles-rails/log/*
+puzzles-rails/tmp/*
+puzzles-rails/storage/*
 
 # Byebug
-.byebug_history
+puzzles-rails/.byebug_history
 
 # Ignore SQLite database (if using)
-*.sqlite3
-*.sqlite3-journal
+puzzles-rails/*.sqlite3
+puzzles-rails/*.sqlite3-journal
 
 # Ignore secrets
-/config/master.key
+puzzles-rails/config/master.key

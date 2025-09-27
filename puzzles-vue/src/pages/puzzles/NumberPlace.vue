@@ -77,7 +77,7 @@ const emptyCountRef = ref<HTMLInputElement | null>(null)
 // ---- 盤面管理 ----
 const boardSize = 9
 const emptyCellsDefault = 45
-let { board, resetBoard, getAnswerValue } = useNumberPlaceBoard(emptyCellsDefault)
+const { board, _, getAnswerValue } = useNumberPlaceBoard(emptyCellsDefault)
 const flatBoard = computed(() => board.value.flat())
 
 // 初期盤面のコピーを保持

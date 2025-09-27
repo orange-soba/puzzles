@@ -11,6 +11,17 @@ export default defineConfigWithVueTs(
   {
     name: 'app/files-to-lint',
     files: ['**/*.{ts,mts,tsx,vue}'],
+
+    // 追加ルール
+    rules: {
+      '@typescript-eslint/no-unused-vars':[
+        'error',
+        {
+          argsIgnorePattern: '^_', // 引数が _ で始まる場合は未使用でも許可
+          varsIgnorePattern: '^_', // 変数が _ で始まる場合は未使用でも許可
+        },
+      ],
+    },
   },
 
   {

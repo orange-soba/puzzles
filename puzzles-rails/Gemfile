@@ -42,16 +42,18 @@ group :development, :test do
   # Static analysis for security vulnerabilities [https://brakemanscanner.org/]
   gem "brakeman", require: false
 
+  # 書かなくても rubocop を実行出来たが明示
+  gem "rubocop", require: false
   # Omakase Ruby styling [https://github.com/rails/rubocop-rails-omakase/]
   gem "rubocop-rails-omakase", require: false
 end
 
 group :development, :test do
-  gem 'rspec-rails'
-  gem 'factory_bot_rails'
-  gem 'faker'
+  gem "rspec-rails"
+  gem "factory_bot_rails"
+  gem "faker"
 end
 
 group :test do
-  gem 'shoulda-matchers'
+  gem "shoulda-matchers"
 end
